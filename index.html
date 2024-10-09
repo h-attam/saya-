@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sayaç</title>
+
+    <style>
+        .screen{
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            
+        }
+
+        button {
+            margin: 32px;
+            background-color: bisque;
+            border-radius: 7px;
+            width: 90px;
+            height: 40px;
+        }
+
+        button:hover{
+            background-color: burlywood;
+            cursor: pointer;
+        }
+
+        body{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+    </style>
+  </head>
+  <body>
+    <div class="screen">
+      <h1 id="counter" style="margin-bottom: 32px; font-size: 122px; color: #000; font-weight: 400;">0</h1>
+      <div>
+        <button  onclick="decrease()">
+          <span style="font-size: 15px; font-weight: bold;">Decrease</span>
+        </button>
+
+        <button  onclick="reset()">
+            <span style="font-size: 15px; font-weight: bold;">Reset</span>
+          </button>
+
+          <button onclick="increase()">
+            <span style="font-size: 15px; font-weight: bold;">İncrease</span>
+          </button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
